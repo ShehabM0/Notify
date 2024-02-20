@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Notify",
+    "slug": "Notify",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/notify.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/notifySplash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notifyIcon.png",
+          "sounds": [
+            "./assets/alert.wav"
+          ]
+        }
+      ]
+    ],
+    "notification": {
+      "icon": "./assets/notify.png"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.notify.demo",
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/notify.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c66f3eba-ac38-4bcc-a987-f21e107735e8"
+      }
+    }
+  }
+}
